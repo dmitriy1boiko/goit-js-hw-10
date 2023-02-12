@@ -4,9 +4,9 @@ let debounce = require('lodash.debounce');
 const DEBOUNCE_DELAY = 300;
 import { fetchCountries } from "./js/fetchCountries";
 
-input = document.querySelector("#search-box");
-countryList = document.querySelector(".country-list");
-countryCard = document.querySelector(".country-info");
+const input = document.querySelector("#search-box");
+const countryList = document.querySelector(".country-list");
+const countryCard = document.querySelector(".country-info");
 
 input.addEventListener("input", debounce(onInputChange, DEBOUNCE_DELAY));
 
